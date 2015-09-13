@@ -1,0 +1,8 @@
+<template name="account">
+  {{#unless currentUser}}
+    {{> fullPageAtForm}}
+  {{else}}
+    <div class="right btn red logout">Logout</div>
+    <h1>Hello!</h1>
+  {{/unless}}
+</template>

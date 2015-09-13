@@ -9,7 +9,7 @@ It's a fancy name for a simple concept: a Smart Contract that takes an amount of
 
 ## What is a Smart Charity Platform?
 
-It's an application that allows people to create and deploy and share customisable Smart Charity contracts.
+It's an application that allows people to create, deploy, share and donate to customisable Smart Charity contracts.
 
 ## What does Aerosol do
 

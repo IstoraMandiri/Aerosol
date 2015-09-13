@@ -1,0 +1,42 @@
+<body>
+</body>
+
+<template name="defaultLayout">
+  {{> Template.dynamic template=menu}}
+  <div class="container">
+    <div class="section">
+      {{> Template.dynamic template=main}}
+    </div>
+  </div>
+</template>
+
+<template name="menu">
+  <nav class="light-blue lighten-1" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Aerosol</a>
+      <ul class="right hide-on-med-and-down">
+        {{> menuItems}}
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        {{> menuItems}}
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+</template>
+
+<template name="menuItems">
+  <li><a href="/">Home</a></li>
+  <li><a href="/registry">Registry</a></li>
+  <li><a href="/create">Create Charity</a></li>
+  <li><a href="/donate">Donate</a></li>
+  <li>
+    <a href="/account">
+      {{#if currentUser}}
+        Account
+      {{else}}
+        Login
+      {{/if}}
+    </a>
+  </li>
+</template>
